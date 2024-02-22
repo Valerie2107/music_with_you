@@ -1,25 +1,17 @@
+let googleMusic = document.querySelector(".searchbar button")
+let googleInput = document.querySelector(".searchbar input")
+
 let myBtns = document.querySelector(".buttons")
 
-
-
-
 // fetch(`https://deezerdevs-deezer.p.rapidapi.com/infos?rapidapi-key=19b3d652a3msh4937caeed36c230p1b3c54jsn1da2ad719459&rapidapi-host=deezerdevs-deezer.p.rapidapi.com`) fonctionne pour info en général
-//ici on teste avec info - ça marche
-// aussi testé avec ma playlist plaisir coupable - playlist/8248370362 - ça marche
 
+function searchMusic(search){  //search correspondra au googleInput.value en argument qui sera dans le googleMusic.addEventListener
 
-
-function sortMusic(music){  //attribute correspondra au data-attribute en argument qui sera dans le eventListener
-
-  fetch(`https://deezerdevs-deezer.p.rapidapi.com/${music}?rapidapi-key=6e9b5b7007msh37e933091d37056p1da7e9jsnb8a274dd7b51&redirect_uri=deezerdevs-deezer.p.rapidapi.com`)
+  fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}&rapidapi-key=6e9b5b7007msh37e933091d37056p1da7e9jsnb8a274dd7b51&redirect_uri=deezerdevs-deezer.p.rapidapi.com`)
   .then(response => response.json())
   .then(data => {
     console.log(data);
-
-
-
-
-
+    //en réponse on aura plusieurs résultats 
   })
   
   .catch(error => {console.log("Erreur lors de la récup des données :", error);
@@ -27,9 +19,16 @@ function sortMusic(music){  //attribute correspondra au data-attribute en argume
 
 }
 
-myBtns.addEventListener('click', function(e){
-  if(e.target.classList.contains("btn")){  //pour vérifier si on est bien sur un bouton avec la classList btn
+googleMusic.addEventListener('click', function(event){
+  event.preventDefault(); // ma page ne sera pas rechargée par défaut bien que le clic ait lieu à l'intérieur d'un form  https://developer.mozilla.org/fr/docs/Web/API/Event/preventDefault
+  // console.log('pierre a appuyé sur son bouton');
+  searchMusic(googleInput.value)
 
+})
+
+
+myBtns.addEventListener('click', function(e){
+  if(e.target.classList.contains("btn")){  //pour vérifier si on est bien sur un bouton avec la classList btn  
     sortMusic(e.target.getAttribute("data-music"))
 
   }
