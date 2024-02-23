@@ -44,16 +44,12 @@ header{
                     left: 310px;
                 }
             }
-
         }
-        
-        
     }  
 }
 .deezer_logo{
-    margin: 30px auto;
+    margin: 30px auto 40px;
     width: 250px;
-    margin-bottom: 40px;
 }
 .navbar_header{
     position: fixed;
@@ -69,7 +65,6 @@ header{
         left: auto;
         width: 50%;  
     }
-    
     .navcenter{
         display: flex;
         justify-content: space-evenly;
@@ -84,10 +79,10 @@ header{
         a{
           @media screen and (min-width:501px){
             display: flex; 
-            div{
-                margin-right: 10px;
-            }
-        }  
+                div{
+                    margin-right: 10px;
+                }
+            }  
         }
         i{
             margin-bottom: 5px;   
