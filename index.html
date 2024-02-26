@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- link plug-in css swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="script/swiper.js" defer></script>
@@ -74,186 +73,63 @@
     </header> 
 
     <main class="wrapper">
+        
         <section class="container-swiper-banner">
-            <div>
-                <h1>Browse</h1>
-                <div class="ligne"></div>
-            </div>
+            <h1>Explorer</h1>
+            <!-- <div class="ligne"></div> -->
             <div class="container-swiper mySwiper-banner">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper fichesPlaylist">
+                    <!-- Debut boucle -->
                     <a href="" class="swiper-slide">
                         <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
+                            <p class="upperc">nom playlsit</p>
+                            <h2>artistes</h2>
+                            <p>tendance</p>
                         </div>
                         <div>
                             <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
                         </div>
                     </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
+                    <!-- Fin boucle -->
+
                 </div>
             </div>
         </section>
+
         <section class="container-swiper-album">
             <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
+                <h2>Tendances du moment</h2>
             </a>
-            <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
+            <div class="container-swiper mySwiper-album">  <!--tout le swipper "tendance du moment"-->
+                <div class="swiper-wrapper"> <!-- c'est son interieur qui sera modifié -->
+                    <!-- DEBUT BOUCLE SWIPPER TENDANCE -->
+                    <a href="" class="swiper-slide tendance">  <!-- ajout de la classe tendance pour pouvoir jouer avec le js-->
+                        <div class="container-swiper-img">  <!-- du coup ici mettre les img générées -->
+                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt=""> <!-- les img générées -->
+                            <div class="container-svg-play">  <!-- le bouton play qui apparait au hover -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
                                     <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
                                 </svg>
                             </div>
                         </div>
                         <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
+                            <h3>titre album ou playlist</h3>
+                            <p>nom artistes</p>
                         </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
+                    </a> <!--  -->
+                    <!-- FIN BOUCLE SWIPPER TENDANCE -->
                 </div>
             </div>
         </section>
+
         <section class="container-swiper-album-double">
             <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
+                <h2>Chansons du moment</h2>
             </a>
             <div class="container-swiper mySwiper-double">
                 <div class="swiper-wrapper">
                     <div class="swiper-wrapper">
+                    <!-- Debut boucle -->
                         <a href="" class="swiper-slide">
                             <div class="container-swiper-img">
                                 <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
@@ -264,95 +140,19 @@
                                 </div>
                             </div>
                             <div class="container-swiper-txt">
-                                <h3>Solid Gold Hits</h3>
-                                <p>Apple Music Pop</p>
+                                <h3>artiste</h3>
+                                <p>titre</p>
                             </div>
                         </a>
-                        <a href="" class="swiper-slide">
-                            <div class="container-swiper-img">
-                                <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                <div class="container-svg-play">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                        <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="container-swiper-txt">
-                                <h3>Solid Gold Hits</h3>
-                                <p>Apple Music Pop</p>
-                            </div>
-                        </a>
-                        <a href="" class="swiper-slide">
-                            <div class="container-swiper-img">
-                                <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                <div class="container-svg-play">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                        <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="container-swiper-txt">
-                                <h3>Solid Gold Hits</h3>
-                                <p>Apple Music Pop</p>
-                            </div>
-                        </a>
-                        <a href="" class="swiper-slide">
-                            <div class="container-swiper-img">
-                                <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                <div class="container-svg-play">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                        <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="container-swiper-txt">
-                                <h3>Solid Gold Hits</h3>
-                                <p>Apple Music Pop</p>
-                            </div>
-                        </a>
+                    <!-- Fin boucle -->
+
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container-Explore">
-            <h2>More to Explore</h2>
-            <a href="">
-                <div>
-                    Browse by Genre
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    Decades
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    Moods and Activities
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    Wordlwide
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    Charts
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    Music Videos
-                </div>
-            </a>
-            <a href="">
-                <div>
-                    Spacial audio
-                </div>
-            </a>
-        </section>
+        
     </main>   
+
     <footer class="wrapper">
         <section class="container-footer">
             <div class="top-footer">
@@ -363,21 +163,20 @@
                 <a href="">Nederlands</a>
             </div>
             <div class="middle-footer">
-                <p>Copyright 2024 <a href="">Apple.inc</a> All right reserved.</p>
+                <p>Copyright 2024 <a href="">Digital City - Front-Dev</a> All right reserved.</p>
             </div>
-            <div class="Bottom-footer">
+            <!-- <div class="Bottom-footer">
                 <a href="">Internet Service Terms</a>
-                <p>|</p>
-                <a href="">Apple Music & Privacy</a>
                 <p>|</p>
                 <a href="">Cookie Waring</a>
                 <p>|</p>
                 <a href="">Support</a>
                 <p>|</p>
                 <a href="">feedback</a>
-            </div>
+            </div> -->
         </section>
     </footer>
+    
     <!-- script Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>

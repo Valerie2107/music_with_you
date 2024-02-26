@@ -1,21 +1,47 @@
+let googleMusic = document.querySelector(".searchbar button")
+let googleInput = document.querySelector(".searchbar input")
+let resultatsRecherche
+let fichesPlaylist = document.querySelector(".fichesPlaylist")
+
 let myBtns = document.querySelector(".buttons")
 
-
-
-
 // fetch(`https://deezerdevs-deezer.p.rapidapi.com/infos?rapidapi-key=19b3d652a3msh4937caeed36c230p1b3c54jsn1da2ad719459&rapidapi-host=deezerdevs-deezer.p.rapidapi.com`) fonctionne pour info en général
-//ici on teste avec info - ça marche
-// aussi testé avec ma playlist plaisir coupable - playlist/8248370362 - ça marche
 
+function searchMusic(search){  //search correspondra au googleInput.value en argument qui sera dans le googleMusic.addEventListener
 
-
-function sortMusic(music){  //attribute correspondra au data-attribute en argument qui sera dans le eventListener
-
-  fetch(`https://deezerdevs-deezer.p.rapidapi.com/${music}?rapidapi-key=6e9b5b7007msh37e933091d37056p1da7e9jsnb8a274dd7b51&redirect_uri=deezerdevs-deezer.p.rapidapi.com`)
+  fetch(`https://deezerdevs-deezer.p.rapidapi.com/playlist?${search}&rapidapi-key=6e9b5b7007msh37e933091d37056p1da7e9jsnb8a274dd7b51&redirect_uri=deezerdevs-deezer.p.rapidapi.com`)
   .then(response => response.json())
   .then(data => {
-    console.log(data);
-
+    fichesPlaylist.innerHTML = ``
+    console.log(data); //en réponse on aura plusieurs résultats 
+    //je dois ranger et stocker mes resultats dans un let qui sera un array que je vais créer en dehors de cette fonction pour pouvoir l'utiliser partout (let resultatsRecherche) --> scope
+    resultatsRecherche = data.data
+    resultatsRecherche.forEach(function(resultat){
+    fichesPlaylist.innerHTML += 
+    `
+    <a href="" class="swiper-slide">
+      <div class="container-swiper-txt">
+          <p class="upperc">${resultat.album.tracklist}</p>
+          <h2>${resultat.album.title}</h2>
+          <p>${resultat.album.title}</p>
+      </div>
+      <div>
+          <img src="${resultat.album.cover_small}" alt="">
+      </div>
+      <div> 
+      ${resultat.album.id} <br>
+      ${resultat.album.title} <br>
+      ${resultat.album.tracklist} <br>
+      ${resultat.artist.id} <br>
+      ${resultat.artist.name} <br>
+      ${resultat.artist.tracklist} <br>
+      id track ${resultat.id} <br>
+      ${resultat.preview} <br>
+      ${resultat.title} <br>
+      </div>
+  </a>
+    `
+    })
 
 
 
@@ -27,9 +53,21 @@ function sortMusic(music){  //attribute correspondra au data-attribute en argume
 
 }
 
+
+
+
+
+googleMusic.addEventListener('click', function(event){
+  event.preventDefault(); // ma page ne sera pas rechargée par défaut bien que le clic ait lieu à l'intérieur d'un form  https://developer.mozilla.org/fr/docs/Web/API/Event/preventDefault
+  // console.log('pierre a appuyé sur son bouton');
+  searchMusic(googleInput.value)
+
+})
+
+
 myBtns.addEventListener('click', function(e){
-  if(e.target.classList.contains("btn")){  //pour vérifier si on est bien sur un bouton avec la classList btn
-  sortMusic(e.target.getAttribute("data-music"))
+  if(e.target.classList.contains("btn")){  //pour vérifier si on est bien sur un bouton avec la classList btn  
+    sortMusic(e.target.getAttribute("data-music"))
 
   }
 })
