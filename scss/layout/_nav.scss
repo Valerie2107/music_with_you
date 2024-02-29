@@ -8,7 +8,6 @@ header{
     transition: ease-in-out 0.5s;
     z-index: 100;
 }
-
 .searchbar_blackbckgrd{
     background-color: #000;
     width: 100vw;
@@ -52,9 +51,7 @@ header{
                 }
             }
 
-        }
-        
-        
+        }   
     }  
 }
 .logobackgrnd{
@@ -75,9 +72,13 @@ header{
         border: none;
         padding: 10px 30px;
         border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        @media screen and (max-width:620px){
+            display: none;
+        }
     }
 }
-
 .navbar_header{
     position: fixed;
     bottom: 0;
@@ -93,7 +94,6 @@ header{
         left: auto;
         width: 50%;  
     }
-    
     .navcenter{
         display: flex;
         justify-content: space-evenly;
@@ -125,8 +125,9 @@ header{
         padding: 3px 25px;
         background-color: #9951b3;
         border-radius: 5px;
-        margin-right: 5px;
+        margin: 5px;
         border: 2px solid #9951b3;
         color: #fff; 
+        cursor: pointer;
     }
 }
