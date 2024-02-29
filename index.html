@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- link plug-in css swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="script/swiper.js" defer></script>
-    <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
-    <!-- favicon-Apple -->
-    <link href="./img/apple-music-2020-09-25.png" style="border-radius: 15px;" rel="icon" sizes="32x32" type="image/png">
+    <!-- favicon -->
+    <link type="image/png" sizes="16x16" rel="icon" href="img/icons8-music-16.png">
     <!-- link fontawsome-->
     <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="scss/style.min.css">
+    <script src="script/pink.js" defer></script>
+    <script src="script/swiper.js" defer></script>
     <script src="script/main.js" defer></script>
     
     <title>Music With You</title>
 </head>
 <body>
-
     <header>
         <div class="navbar">
             <div class="searchbar_blackbckgrd">
@@ -72,14 +72,15 @@
             <div class="buttons">
                 <button type="button" data-music="artist" class="btn">Artiste</button>
                 <button type="button" data-music="album" class="btn">Album</button>
-                <button type="button" data-music="playlist" class="btn">Playlist</button>
+                <!-- <button type="button" data-music="playlist" class="btn">Playlist</button> -->
                 <button type="button" data-music="style" class="btn">Genre</button>
-                <button type="button" data-music="radio" class="btn">Radio</button>
+                <button type="button" data-music="style" class="btn">Titre</button>
+                <!-- <button type="button" data-music="radio" class="btn">Radio</button> -->
             </div>
         </div>
     </header> 
-
     <main class="wrapper">
+
         <!-- <section class="container-swiper-banner">
             <div>
                 <h1>Browse</h1>
@@ -107,94 +108,19 @@
                             <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
                         </div>
                     </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-txt">
-                            <p class="upperc">FEATURED PLAYlIST</p>
-                            <h2>Lo-Fi Chill</h2>
-                            <p>Apple Music Chill</p>
-                        </div>
-                        <div>
-                            <img src="./img/seascape-sunset-lo-fi-chill-wallpaper-sunrise-ocean-waves-ocean-coast-sun-and-sand-2d-cartoon-landscape-illustration-vaporwave-background-80s-retro-album-art-synthwave-aesthetics-vector.jpg" alt="">
-                        </div>
-                    </a>
                 </div>
             </div>
         </section> -->
-        <section class="container-swiper-album">
-            <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
-            </a>
-            <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="hollo">
 
-            </div>
-        </section>
-        <!-- <section class="container-swiper-album">
-            <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
+        <!-- swipper des différents artistes etc -->
+        <section class="container-swiper-album">  <!-- Artistes -->
+            <a href="" target="_blank">
+                <h2>Artistes</h2>
             </a>
             <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
+                <div class="swiper-wrapper artiste">
+                    <!-- Debut boucle -->
+                    <!-- <a href="" class="swiper-slide">
                         <div class="container-swiper-img">
                             <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
                             <div class="container-svg-play">
@@ -204,90 +130,22 @@
                             </div>
                         </div>
                         <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
+                            <h3>artiste</h3>
+                            <p>titre</p>
                         </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
+                    </a> -->
+                <!-- Fin boucle -->
                 </div>
             </div>
         </section>
-        <section class="container-swiper-album">
+        <section class="container-swiper-album">  <!-- Chanson -->
             <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
+                <h2>Chanson</h2>
             </a>
             <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
+                <div class="swiper-wrapper chanson">
+                    <!-- Debut boucle -->
+                    <!-- <a href="" class="swiper-slide">
                         <div class="container-swiper-img">
                             <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
                             <div class="container-svg-play">
@@ -297,90 +155,22 @@
                             </div>
                         </div>
                         <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
+                            <h3>artiste</h3>
+                            <p>titre</p>
                         </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
+                    </a> -->
+                <!-- Fin boucle -->
                 </div>
             </div>
         </section>
-        <section class="container-swiper-album">
+        <section class="container-swiper-album">  <!-- Album -->
             <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
+                <h2>Album</h2>
             </a>
             <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
+                <div class="swiper-wrapper album">
+                    <!-- Debut boucle -->
+                    <!-- <a href="" class="swiper-slide">
                         <div class="container-swiper-img">
                             <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
                             <div class="container-svg-play">
@@ -390,459 +180,20 @@
                             </div>
                         </div>
                         <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
+                            <h3>artiste</h3>
+                            <p>titre</p>
                         </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
+                    </a> -->
+                <!-- Fin boucle -->
                 </div>
             </div>
         </section>
-        <section class="container-swiper-album">
-            <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
-            </a>
-            <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="container-swiper-album">
-            <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
-            </a>
-            <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="container-swiper-album">
-            <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
-            </a>
-            <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="container-swiper-album">
-            <a href="">
-                <h2>Throwback Thursday <span>></span></h2>
-            </a>
-            <div class="container-swiper mySwiper-album">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                    <a href="" class="swiper-slide">
-                        <div class="container-swiper-img">
-                            <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                            <div class="container-svg-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="container-swiper-txt">
-                            <h3>Solid Gold Hits</h3>
-                            <p>Apple Music Pop</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="container-best">
+       
+        <!-- Beste New Songs -->
+        <!-- <section class="container-best">
             <div>
                 <div>
-                    <a href=""><h2>Beste New Songs <span>></span></h2></a>
+                    <a href=""><h2>Beste New Songs</h2></a>
                 </div>
                 <div class="swiper mySwiper-mini-album">
                     <div class="container-colomuns swiper-wrapper">
@@ -869,94 +220,6 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
                         </div>
                         <div class="container-best-box swiper-slide">
                             <a href="" class="container-best-element">
@@ -981,408 +244,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
                         </div>
                         <div class="container-best-box swiper-slide">
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="container-best-box swiper-slide">
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="container-best-box swiper-slide">
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="container-best-element">
-                                <div class="ligne"></div>
-                                <div class="container-best-content">
-                                    <div class="container-best-img">
-                                        <img src="./img/61aFLWNBDgL._AC_SX522_.jpg" alt="">
-                                        <div class="container-svg-play">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                                                <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="container-best-txt">
-                                        <h3>Traning Season</h3>
-                                        <p>Dua Lipa</p>
-                                    </div>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 448 512">
-                                            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
                             <a href="" class="container-best-element">
                                 <div class="ligne"></div>
                                 <div class="container-best-content">
@@ -1409,7 +272,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+        <!-- more to explore -->
         <section class="container-Explore">
             <h2>More to Explore</h2>
             <a href="">
@@ -1447,53 +312,22 @@
                     Spacial audio
                 </div>
             </a>
-        </section> -->
-    <!-- Page-Album -->
-    <!-- <main class="wrapper">
-        <section>
-            <div class="container-album">
-                <div class="container-img">
-                    <img src="/img/apple-music-2020-09-25.png" alt="">
-                </div>
-                <div>
-                    <h2>Office DJ</h2>
-                    <p>Apple Music Pop</p>
-                    <p>
-                        There's nothing like a little music to keep the workplace humming. This uptempo, 
-                        easygoing playlist—covering the best in recent pop, dance, hip-hop, R&B and more—is
-                        designed to carry you through from 9 to 5. We regularly update these tunes. If you
-                        hear something you like, add it to your library.
-                    </p>
-                </div>
-            </div>
-        </section> -->
+        </section> 
+
     </main>
-    <footer>
-        <section class="container-footer wrapper">
-            <div class="top-footer">
-                <a href="">Belguim</a>
-                <p>|</p>
-                <a href="">Francais (France)</a>
-                <p>|</p>
-                <a href="">Nederlands</a>
-            </div>
+
+    <footer class="wrapper">
+        <section class="container-footer">
+            
+            <!-- <div class="top-footer">
+                <a href="" class="footer_link">Français</a>
+                <div class="footer_div">|</div>
+                <a href="" class="footer_link">Nederlands</a>
+            </div> -->
             <div class="middle-footer">
-                <p>Copyright 2024 <a href="">Apple.inc</a> All right reserved.</p>
-            </div>
-            <div class="Bottom-footer">
-                <a href="">Internet Service Terms</a>
-                <p>|</p>
-                <a href="">Apple Music & Privacy</a>
-                <p>|</p>
-                <a href="">Cookie Waring</a>
-                <p>|</p>
-                <a href="">Support</a>
-                <p>|</p>
-                <a href="">feedback</a>
+                <p class="footer_p">Copyright 2024 | <a target="_blank" href="https://icons8.com/icon/QCNE0Uy4iZhq/music">Music</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
             </div>
         </section>
     </footer>
-    <!-- script Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
