@@ -29,39 +29,47 @@ function searchMusic(variableTemporaire){  //variableTemporaire correspondra au 
     for (let i = 0; i < data.data.length; i++) {
       // console.log(i);
 
-      artist.innerHTML += `
-        <a href="" class="swiper-slide">
+      artist.innerHTML += 
+      `
+        <div class="swiper-slide">
           <div class="container-swiper-img">
               <img src="${data.data[i].artist.picture}" alt="${data.data[i].artist.name}">
+              <a href="">
+                <div class="container-svg-play">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
+                        <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                    </svg>
+                </div>
+              </a>
+          </div>
+          <div class="container-swiper-txt">
+              
+              <h3><a href="${data.data[i].artist.link}" target="_blank">${data.data[i].artist.name}</a></h3>
+          </div>
+        </div>
+        `
+      track.innerHTML += 
+      `
+      <div class="swiper-slide">
+        <div class="container-swiper-img">
+            <img src="${data.data[i].album.cover}" alt="${data.data[i].album.title}">
+            <a href="">
               <div class="container-svg-play">
                   <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
                       <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
                   </svg>
               </div>
-          </div>
-          <div class="container-swiper-txt">
-              <h3><a href="${data.data[i].artist.link} target=_blank">${data.data[i].artist.name}</a></h3>
-          </div>
-        </a>
-        `
-      track.innerHTML += `
-      <a href="" class="swiper-slide">
-        <div class="container-swiper-img">
-            <img src="${data.data[i].album.cover}" alt="${data.data[i].album.title}">
-            <div class="container-svg-play">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                </svg>
-            </div>
+            </a>
         </div>
         <div class="container-swiper-txt">
-            <a href="${data.data[i].link} target=_blank"><h3>${data.data[i].title}</h3></a>
+            <a href="${data.data[i].link}" target="_blank"><h3>${data.data[i].title}</h3></a>
             <p>${data.data[i].artist.name}</p>
         </div>
-      </a>
+      </div>
       `
-      album.innerHTML += `
-      <a href="" class="swiper-slide">
+      album.innerHTML += 
+      `
+      <div class="swiper-slide">
         <div class="container-swiper-img">
 
             <div class="conteneur-livre">
@@ -75,17 +83,19 @@ function searchMusic(variableTemporaire){  //variableTemporaire correspondra au 
               </div>
             </div>
 
-            <div class="container-svg-play">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
-                    <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                </svg>
-            </div>
+            <a href="">
+              <div class="container-svg-play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 384 512">
+                      <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                  </svg>
+              </div>
+            </a>
         </div>
         <div class="container-swiper-txt">
-            <a href="${data.data[i].tracklist}" target=_blank><h3>${data.data[i].title}</h3></a>
+            <h3><a href="${data.data[i].tracklist}" target="_blank">${data.data[i].title}</a></h3>
             <p>${data.data[i].artist.name}</p>
         </div>
-      </a>
+      </div>
       `
       }
   })
