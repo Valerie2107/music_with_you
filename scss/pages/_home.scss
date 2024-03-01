@@ -1,6 +1,6 @@
 /********* MAIN ***********/
 
-// Parametres Scrollbar Color
+// Parametres Scrollbar Color-------------------------------------------------------------------------------
 html {
     scrollbar-color: #9951b3 #fff;
 }
@@ -13,51 +13,7 @@ body{
     padding: 20px;
 }
 
-// Parametres Swipper
-.container-swiper-banner{
-    .ligne{
-        border: 1px solid #9951b3;
-        margin-bottom: 20px;
-    }
-    h1{
-        margin: 0;
-        padding: 10px 0;
-    }
-    .container-swiper {
-        .swiper-wrapper{
-            .swiper-slide{
-                width: 300px;
-                .container-swiper-txt{
-                    margin-bottom: 10px;
-                    margin-top: 10px;
-                    .upperc{
-                        padding-bottom: 5px;
-                        font-size: 10px;
-                        color: #000;
-                        text-transform: uppercase;
-                    }
-                    h2{
-                        color: #9951b3;
-                        padding-bottom: 2px;
-                    }
-                    .apple{
-                        font-size: 10px;
-                    }
-                }
-                img{
-                    width: 100%;
-                    height: 170px;
-                    border-radius: 8px;
-                    transition: 0.3s all ease-in-out;
-                }
-                &:hover{
-                    filter: grayscale(0.5);
-                    transition: 0.3s all ease-in-out;
-                }
-            }
-        }
-    }
-}
+// Parametres Swipper --------------------------------------------------------------------------------------
 
 .container-swiper-album{
     margin: 25px 0;
@@ -111,87 +67,17 @@ body{
                         }
                     }
                 }
-                
             }
         }
     }
 }
-
-.container-best{
-    margin-bottom: 50px;
-    width: 100%;
-    .container-colomuns{
-        display: flex;
-        width: 100%;
-    }
-    .container-best-box{
-        width: 260px;
-        margin-right: 25px;
-        .container-best-element{
-            .ligne{
-                border: 1px solid #ce0a0e;
-                width: 100%;
-            }
-            .container-best-content{
-                display: flex;
-                align-items: center;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                .container-best-txt{
-                    width: 170px;
-                    overflow: hidden;
-                }
-                .container-best-img{
-                    width: 40px;
-                    height: 40px;
-                    margin-right: 20px;
-                    position: relative;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 5px;
-                    }
-                    .container-svg-play{
-                        display: none;
-                    }
-                }
-            }
-            &:hover{
-                .container-best-img{
-                    .container-svg-play{
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 5px;
-                        background: rgba(92,86,86,0.5);
-                        left: 0;
-                        top: 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
-                .container-best-txt{
-                    p{
-                        text-decoration: underline;
-                    }
-                }
-                
-            }
-        }
-    }
-    .swiper-slide{
-        width: 260px;
-    }
-}
-
 
 .container-Explore{
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    margin-bottom: 25px;
-    margin-top: 15px;
+display: flex;
+flex-direction: column;
+row-gap: 15px;
+margin-bottom: 25px;
+margin-top: 15px;
     h2{
         font-size: 25px;
         margin: 5px 0 0 5px;
@@ -203,7 +89,7 @@ body{
     }
 }
 
-.album{
+.album{  //mise en page en formede "livre" pour montrer qu'il s'agit d'un album et pas juste d'une chanson
     .conteneur-livre {
         width: 400px;
         position: relative;
