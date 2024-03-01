@@ -11,13 +11,14 @@ var swiperBanner = new Swiper(".mySwiper-banner", {
 // swiper-album
 var swiperAlbum = new Swiper(".mySwiper-album", {
     slidesPerView: 3,
-    spaceBetween: 20,
+    spaceBetween: 25,
     width: 500,
     pagination: {
         clickable: true,
     },
 });
 
+// swiper-mini-album
 var swiperAlbum = new Swiper(".mySwiper-mini-album", {
     slidesPerView: 4,
     width: 1000,

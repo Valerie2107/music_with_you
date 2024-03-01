@@ -14,7 +14,6 @@ body{
 }
 
 // Parametres Swipper --------------------------------------------------------------------------------------
-
 .container-swiper-album{
     margin: 25px 0;
     .container-swiper {
@@ -89,7 +88,7 @@ margin-top: 15px;
     }
 }
 
-.album{  //mise en page en formede "livre" pour montrer qu'il s'agit d'un album et pas juste d'une chanson
+.album{  //mise en page en forme de "livre" pour montrer qu'il s'agit d'un album et pas juste d'une chanson
     .conteneur-livre {
         width: 400px;
         position: relative;
@@ -97,13 +96,11 @@ margin-top: 15px;
         display: flex;
         perspective: 1200px;
       }
-      
       .livre {
        box-shadow: 0 5px 8px hsla(0, 0%, 0%, .5);
         transform: translateX(35px) rotateY(30deg);
         transform-style: preserve-3d;
         transform-origin: 125px 0;
-      
         &:after {
           content: '';
           position: absolute;
@@ -115,18 +112,15 @@ margin-top: 15px;
           z-index: 2;
         }
       }
-      
       .couverture {
         position: relative;
         z-index: 1;
-      
         img {
           outline: 1px solid transparent;
           width: 100%;
           display:block;
         }
       }
-      
       .tranche {
         position: absolute;
         bottom: 0;
@@ -136,7 +130,6 @@ margin-top: 15px;
         transform: rotateY(-90deg) translateX(-49px);
         transform-origin: 0 0;
         font-family: sans-serif;
-      
         &:before {
           content: '';
           display: block;
@@ -144,7 +137,6 @@ margin-top: 15px;
           height: 100%;
           background: #66a;
         }
-      
         .titre {
           display: block;
           width: 400px;
